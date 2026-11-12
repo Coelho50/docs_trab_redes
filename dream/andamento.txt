@@ -1,0 +1,8 @@
+colocar toda vez que entrar na maquina:
+nft add table nat
+nft 'add chain nat postrouting { type nat hook postrouting priority 100 ; }'
+nft add rule nat postrouting ip saddr 192.168.55.0/24 oif enp0s3
+nft add rule nat postrouting masquerade
+nft list table nat
+
+feito ate a questao 9

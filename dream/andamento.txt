@@ -5,4 +5,3 @@ nft add rule nat postrouting ip saddr 192.168.55.0/24 oif enp0s3
 nft add rule nat postrouting masquerade
 nft list table nat
 
-feito ate a questao 9
